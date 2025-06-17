@@ -1,0 +1,10 @@
+# כל קבצי JavaScript נחשבים לשפה הראשית
+*.js linguist-detectable=true
+*.jsx linguist-detectable=true
+
+# קבצים אחרים לא נחשבים לזיהוי שפה
+*.json linguist-detectable=false
+*.css linguist-detectable=false
+*.md linguist-detectable=false
+*.png linguist-detectable=false
+*.jpg linguist-detectable=false
