@@ -1,4 +1,4 @@
-# 🚗 Car Rental System
+# 🚗 Car Rental System - side client
 
 An advanced system for managing and renting cars, with an emphasis on a convenient user interface, clean design, and advanced use of React components and ready-made libraries. Includes permissions for a regular user and a system administrator, and allows full management of cars, rentals, returns, pricing, and more.
 
