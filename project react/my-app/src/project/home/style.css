@@ -1,0 +1,599 @@
+.details {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60vw;
+    max-height: 80vh;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 2000;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 40vw;
+}
+
+.details-content {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: ". . . . . . . "
+        "img img  img . info info info ";
+    grid-template-columns: 10% 20% 10% 20% 20% 10%;
+    grid-template-rows: 8vw 100px;
+}
+
+.g1 {
+    width: 100%;
+    height: 15vw;
+
+}
+
+.image-container {
+    grid-area: img;
+    width: 30vw;
+    height: 20vw;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.info-container {
+    grid-area: info;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: black;
+}
+
+.close:hover {
+    color: rgb(255, 102, 0);
+}
+
+.booking-button {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking-button:hover {
+    background-color: #28a745;
+}
+
+.divlogo {
+    width: 100vw;
+    height: 10vw;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    background-color: white;
+}
+
+#logo {
+    top: 0;
+    padding: 1rem;
+    width: 10%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 52%;
+    transform: translateX(-50%);
+}
+
+.nav {
+    position: fixed;
+    top: 5vw;
+    background-color: black;
+    width: 100vw;
+    height: 4rem;
+    padding: 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 100;
+}
+
+.link {
+    margin: 0 2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.link1 {
+    color: white;
+}
+
+.link:hover {
+    color: darksalmon;
+}
+
+.temp {
+    position: fixed;
+    height: 5px;
+    top: 8.5vw;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 102, 0);
+    z-index: 100;
+}
+
+.temp1 {
+    position: fixed;
+    height: 6px;
+    top: 11.8vw;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 102, 0);
+    z-index: 100;
+}
+
+:root {
+    --nav1-height: 3vw;
+    --nav1-top: 8.8vw;
+    --scroll-duration: 30s;
+    --scroll-width: 200%;
+    --scroll-translate: -100%;
+}
+
+.nav1 {
+    position: fixed;
+    height: var(--nav1-height);
+    top: var(--nav1-top);
+    left: 0;
+    width: 100vw;
+    background-color: white;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.nav1-content {
+    display: flex;
+    width: calc(200% + 1px);
+    height: 100%;
+    animation: scroll var(--scroll-duration) linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(var(--scroll-translate));
+    }
+}
+
+#v1 {
+    padding: 0.7rem;
+}
+
+.nav1-image {
+    height: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.divA {
+    padding: none;
+    background-color: rgb(255, 102, 0);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.a {
+    font-size: 35px;
+    color: white;
+}
+
+.div {
+    display: grid;
+    grid-template-areas: ". . . . ."
+        "img img img img img"
+        "hcar hcar hcar hcar hcar"
+        "i1 i1 i1 i1 i1"
+        "i2 i2 i2 i2 i2";
+    grid-template-columns: 10% 30% 20% 30% 10%;
+    grid-template-rows: 12vw 45vw 35vw 24.9vw 23vw;
+}
+
+.img {   
+    grid-area: img;
+    display: grid;
+    grid-template-areas:". . . ."
+                        ". img11 divi .";
+    grid-template-columns:10% 20% 60% 10%;
+    grid-template-rows:3vw auto ;
+    width: 100vw;
+    height: 42vw;
+    background: url('./pic/תמונת\ רקע.jpg');
+    background-size: cover;
+}
+#delek{
+    grid-area: img11;
+  width:20vw;
+  height: 20vw;
+  /* background-color: #484141; */
+  margin-right: 60vw;
+  /* margin-top: 10vw; */
+  
+}
+.inputdiv{
+    grid-area: divi;
+}
+
+.div1 {
+    margin-left: 24.5vw;
+    grid-area: but;
+    direction: rtl;
+}
+
+.but {
+    width: 200px;
+    height: 4vw;
+    color: #000000;
+    border-radius: 0px;
+    margin: 5px 5px 5px 5px;
+    margin-top: 4rem;
+    border: none;
+    background-color: white;
+}
+
+.input {
+    grid-area: input;
+    direction: rtl;
+    height: 7vw;
+    font-size: 1.5rem;
+    backdrop-filter: blur(20px);
+}
+
+.input-box1 {
+    width: 200px;
+    color: #000000;
+    border-radius: 4px;
+    padding: 25px 35px;
+    margin: 5px 5px 5px 5px;
+}
+
+.hcar {
+    grid-area: hcar;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: "h1 h1 h1 h1 ."
+        ". c1 c2 c3 .";
+    grid-template-columns: 10% repeat(3, 1fr) 5%;
+    grid-template-rows: 8vw auto;
+}
+
+.hc1 {
+    width: 20vw;
+    font-size: 17px;
+}
+
+#h1 {
+    grid-area: h1;
+}
+
+#c1 {
+    grid-area: c1;
+}
+
+#c2 {
+    grid-area: c2;
+}
+
+#c3 {
+    grid-area: c3;
+}
+
+.k1 {
+    grid-area: k1;
+    background-color: rgb(74, 69, 69);
+    width: 100vw;
+    height: 50vw;
+}
+
+.cars-container {
+    margin-top: 10vw;
+    direction: rtl;
+    margin-right: 9vw;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.divCard {
+    top: 3vw;
+    border: #000000 2px solid;
+}
+
+.card {
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+#n1 {
+    background-color: black;
+    border: none;
+    border-radius: 0%;
+    border-radius: 0 0 5px 5px;
+}
+
+#n1:hover {
+    background-color: rgb(255, 102, 0);
+}
+
+.path {
+    width: 100%;
+    border-bottom: #000000 2px solid;
+}
+
+.carImg {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background-color: rgb(219, 206, 193);
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modal-content1 {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: rgb(255, 102, 0);
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content1 {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff5c5c;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.modal-info-container {
+    padding: 20px;
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.payment-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.booking-button {
+    background-color: rgb(255, 102, 0);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.i1 {
+    grid-area: i1;
+    width: 100%;
+    background: url('./pic/1.png');
+    background-size: contain;
+}
+
+.i2 {
+    grid-area: i2;
+    width: 100%;
+    background: url('./pic/2.png');
+    background-size: contain;
+}
+
+.icon-light {
+    color: #6c757d;
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+.img1 {
+    margin-top: 12vw;
+    width: 100vw;
+    height: auto;
+    background: url('./pic/תמונת\ רקע.jpg');
+    background-size: cover;
+}
+
+.up {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30vw;
+    max-height: 80vh;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 2000;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: row;
+    height: 40vw;
+}
+
+.divInput {
+    margin-top: 10%;
+}
+
+.input-box2 {
+    position: relative;
+
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box2 input {
+
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #000000;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box2 input::placeholder {
+    color: #484141;
+}
+
+.input-box2 i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+
+}
+
+#n2 {
+    background-color: #33333300;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #000000;
+    padding: 20px 45px 20px 20px;
+}
+
+.btn1 {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #000000;
+    padding: 20px 45px 20px 20px;
+    background-color: rgb(255, 102, 0);
+}
+
+.btn1:hover {
+    background-color: rgb(67, 247, 67);
+}
+
+.icon-container {
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    display: flex;
+    gap: 5px;
+}
+
+.icon1 {
+    color: #dc3545;
+}
+
+.icon2 {
+    color: #007bff;
+}
